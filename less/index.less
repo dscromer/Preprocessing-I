@@ -49,11 +49,189 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@lightred: #e0b8b8;
+@serif: 'Crete Round', serif;
+@sans-serif: 'Quicksand', sans-serif;
+
+.heading {
+	font-family: @serif;
+	font-size: 6rem;
+}
+
+.small-head {
+	font-family: @serif;
+	font-size: 2rem;
+}
+
+.small-text {
+	font-family: @sans-serif;
+	font-size: 1.5rem;
+}
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	max-width: 1024px;
+	margin: auto;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2% 0;
+	
+@media (max-width: 500px) {
+	flex-direction: column;
+	align-items: center;
+	
+	a {
+		margin: 1%;
+	}
+}
+	a {
+		text-decoration: none;
+		font-family: @sans-serif;
+		color: black;
+		font-size: 2rem;
+		padding-left: 2%;
+		
+		&:hover {
+			color: @lightred;
+		}
+	}
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	background-color: @lightred;
+	padding: 2%;
+	
+	.headshot {
+		max-width: 25%;
+		height: auto;
+		border: solid 3px white;
+	}
+
+	h1 {
+		.heading();
+		margin: 1% 0;
+
+
+		@media (max-width: 500px) {
+			font-size: 3rem;
+		}
+	}
+
+	h2 {
+		font-family: @sans-serif;
+		font-size: 2rem;
+	}
+
+	hr {
+		width: 100%;
+		border: solid .5px black;
+		margin: 1% 0;
+	}
+
+	div {
+		display: flex;
+		align-content: center;
+	
+		p {
+			font-family: @sans-serif;
+			font-size: 1.75rem;
+			margin-bottom: 2%;
+			margin-right: 1%;
+		}
+
+		button {
+			font-size: 1.5rem;
+			font-family: @serif;
+			border: 0;
+			padding: 0;
+			width: 15%;
+			height: 30px;
+			border-radius: 4px;
+			background-color: #a04646;
+			color: white;
+
+			&:hover {
+				background-color: @lightred;
+				color: black;
+				border: solid 1px black;
+			}
+		}
+		@media (max-width: 500px) {
+			flex-flow: wrap;
+
+			button {
+				width: 30%;
+			}
+		}
+	}
+}
+
+.skills {
+	display: flex;
+	justify-content: space-between;
+	margin: 2% 0;
+
+	h3 {
+		.small-head();
+		margin-bottom: 1%;
+	}
+
+	div {
+		width: 48%;
+
+	}
+
+	p, li {
+		.small-text();
+	
+	}
+
+	li {
+		margin: 2%;
+	}
+}
+
+.work-history {
+	margin-bottom: 2%;
+	
+	h3 {
+		.small-head();
+		margin-bottom: 1%;
+	}
+
+	.flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.child {
+		width: 48%;
+		.small-text;
+	}
+}
+
+.contact {
+	h3{
+		.small-head();
+	}
+
+	.small-text();
+	margin-bottom: 2%;
+}

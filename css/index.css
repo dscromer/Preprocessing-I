@@ -1,1 +1,290 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+.heading {
+  font-family: 'Crete Round', serif;
+  font-size: 6rem;
+}
+.small-head {
+  font-family: 'Crete Round', serif;
+  font-size: 2rem;
+}
+.small-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2% 0;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    margin: 1%;
+  }
+}
+nav a {
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  font-size: 2rem;
+  padding-left: 2%;
+}
+nav a:hover {
+  color: #e0b8b8;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0b8b8;
+  padding: 2%;
+}
+.intro .headshot {
+  max-width: 25%;
+  height: auto;
+  border: solid 3px white;
+}
+.intro h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 6rem;
+  margin: 1% 0;
+}
+@media (max-width: 500px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+}
+.intro h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+}
+.intro hr {
+  width: 100%;
+  border: solid 0.5px black;
+  margin: 1% 0;
+}
+.intro div {
+  display: flex;
+  align-content: center;
+}
+.intro div p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 2%;
+  margin-right: 1%;
+}
+.intro div button {
+  font-size: 1.5rem;
+  font-family: 'Crete Round', serif;
+  border: 0;
+  padding: 0;
+  width: 15%;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #a04646;
+  color: white;
+}
+.intro div button:hover {
+  background-color: #e0b8b8;
+  color: black;
+  border: solid 1px black;
+}
+@media (max-width: 500px) {
+  .intro div {
+    flex-flow: wrap;
+  }
+  .intro div button {
+    width: 30%;
+  }
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+.skills h3 {
+  font-family: 'Crete Round', serif;
+  font-size: 2rem;
+  margin-bottom: 1%;
+}
+.skills div {
+  width: 48%;
+}
+.skills p,
+.skills li {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+}
+.skills li {
+  margin: 2%;
+}
+.work-history {
+  margin-bottom: 2%;
+}
+.work-history h3 {
+  font-family: 'Crete Round', serif;
+  font-size: 2rem;
+  margin-bottom: 1%;
+}
+.work-history .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.work-history .child {
+  width: 48%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+}
+.contact {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+.contact h3 {
+  font-family: 'Crete Round', serif;
+  font-size: 2rem;
+}
